@@ -12,23 +12,25 @@
     </thead>
     <!-- 表格主体区域 -->
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>商品</td>
-        <td>998</td>
-        <td>xxx</td>
-        <td>xxx</td>
+      <tr v-for="item in goodsList" :key="item.id">
+        <td>{{ item.id }}</td>
+        <td>{{ item.goods_name }}</td>
+        <td>{{ item.goods_price }}</td>
+        <td>{{ item.tags }}</td>
+        <td><button class="btn btn-danger btn-sm">删除</button></td>
       </tr>
     </tbody>
   </table>
 </template>
 
 <script>
-import axios from '@/utils/request.js'
 export default {
   name: 'MyTable',
-  created() {
-    console.log(axios.defaults)
+  props: {
+    goodsList: {
+      type: Array,
+      required: true
+    }
   }
 }
 </script>
