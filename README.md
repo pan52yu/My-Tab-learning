@@ -24,3 +24,7 @@
 
 1. MyTable 组件中，标题和 body 不写死，用两个具名插槽
 2. template 模板进行传递
+
+-   封装 AddTag 组件 并在 MyGoodsList 中使用
+
+> eg:失去焦点事件 @blur
