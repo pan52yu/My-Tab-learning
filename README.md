@@ -30,9 +30,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 业务逻辑
 
-1、yarn add bootstrap
-2、在 main.js 中引入 css
-3、新建 MyFooter，MyHeader
+1.yarn add bootstrap
+2.在 main.js 中引入 css
+3.新建 MyFooter，MyHeader
 
 -   页面级别的新建文件夹 views / pages
 -   新建文件夹 utils
