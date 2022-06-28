@@ -5,7 +5,6 @@
     <my-footer :tabList="tabList" @change-component="componentName = $event"></my-footer>
   </div>
 </template>
-
 <script>
 import MyFooter from './components/MyFooter.vue'
 import MyHeader from './components/MyHeader.vue'
